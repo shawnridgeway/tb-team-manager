@@ -12,7 +12,3 @@
 .member-ctr:hover .newMember-picture {
   background-color: #fff;
 }
-
-.newMember-dropdownCtx {
-  position: relative;
-}

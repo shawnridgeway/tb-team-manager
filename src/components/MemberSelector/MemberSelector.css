@@ -1,17 +1,17 @@
-.newMember-inputCtr {
+.memberSelector-inputCtr {
   padding: 16px 10px;
 }
 
-.newMember-input {
+.memberSelector-input {
   display: block;
   width: 100%;
 }
 
-.newMember-title {
+.memberSelector-title {
   font-weight: 800;
 }
 
-.newMember-noResults {
+.memberSelector-noResults {
   text-align: center;
   padding: 0 10px 16px;
 }

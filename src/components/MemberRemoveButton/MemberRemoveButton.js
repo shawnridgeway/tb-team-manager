@@ -14,7 +14,7 @@ class MemberRemoveButton extends React.Component {
 
   render() {
     return (
-        <div className="member-remove text-warning"
+        <div className="memberRemoveButton text-warning"
              onClick={this.removeMember}>
           X
         </div>

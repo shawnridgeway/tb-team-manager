@@ -1,4 +1,4 @@
-.member-remove {
+.memberRemoveButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,6 @@
   cursor: pointer;
 }
 
-.member-remove:hover {
+.memberRemoveButton:hover {
   border: 1px solid #ff9931;
 }

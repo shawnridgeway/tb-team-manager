@@ -41,22 +41,22 @@ class MemberSelector extends React.Component {
             member.username.toLowerCase().indexOf(this.state.filter.toLowerCase()) !== -1);
     return (
         <div>
-          <div className="newMember-inputCtr">
+          <div className="memberSelector-inputCtr">
             <input
                 type="search"
-                className="newMember-input"
+                className="memberSelector-input"
                 value={this.state.filter}
                 onChange={this.handleFilterChange}
                 autoFocus={true}
             />
           </div>
-          <div className="newMember-optionCtr">
+          <div className="memberSelector-optionCtr">
             {this.renderOptions(memberOptions)}
           </div>
           {memberOptions.length === 0 && (
-              <div className="newMember-noResults">
-                <div className="newMember-title text-highlighted">Team member not found.</div>
-                <small className="newMember-subtext">Maybe he/she is not in your <a href="#">team</a>.</small>
+              <div className="memberSelector-noResults">
+                <div className="memberSelector-title text-highlighted">Team member not found.</div>
+                <small className="memberSelector-subtext">Maybe he/she is not in your <a href="#">team</a>.</small>
               </div>
           )}
         </div>
