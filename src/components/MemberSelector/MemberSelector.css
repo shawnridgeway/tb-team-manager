@@ -1,0 +1,17 @@
+.newMember-inputCtr {
+  padding: 16px 10px;
+}
+
+.newMember-input {
+  display: block;
+  width: 100%;
+}
+
+.newMember-title {
+  font-weight: 800;
+}
+
+.newMember-noResults {
+  text-align: center;
+  padding: 0 10px 16px;
+}

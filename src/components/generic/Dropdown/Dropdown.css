@@ -1,0 +1,14 @@
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #eceded;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  background-color: #fff;
+  cursor: auto;
+}
+
+.dropdown-ctr {
+  position: relative;
+}

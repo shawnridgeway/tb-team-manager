@@ -1,0 +1,15 @@
+.member-remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.member-remove:hover {
+  border: 1px solid #ff9931;
+}

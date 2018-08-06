@@ -1,0 +1,18 @@
+.newMember-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e2f4ea;
+  line-height: 1;
+}
+
+.member-ctr:hover .newMember-picture {
+  background-color: #fff;
+}
+
+.newMember-dropdownCtx {
+  position: relative;
+}
