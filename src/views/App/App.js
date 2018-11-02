@@ -7,7 +7,6 @@ import TeamManager from '../../components/TeamManager/TeamManager.js';
 import PropTypes from 'prop-types';
 import { MemberShape } from '../../shapes';
 
-
 class App extends React.Component {
   static propTypes = {
     allMembers: PropTypes.arrayOf(MemberShape),
@@ -16,37 +15,39 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedMembers: []
+      selectedMembers: [],
     };
   }
 
-  handleAddMember = (memberId) => {
+  handleAddMember = memberId => {
     this.setState(prevState => {
-      const dedupedMembers = prevState.selectedMembers
-          .filter(member => member !== memberId);
+      const dedupedMembers = prevState.selectedMembers.filter(
+        member => member !== memberId
+      );
       return {
-        selectedMembers: [...dedupedMembers, memberId]
+        selectedMembers: [...dedupedMembers, memberId],
       };
     });
   };
 
-  handleRemoveMember = (memberId) => {
+  handleRemoveMember = memberId => {
     this.setState(prevState => {
       return {
-        selectedMembers: prevState.selectedMembers
-            .filter(member => member !== memberId)
+        selectedMembers: prevState.selectedMembers.filter(
+          member => member !== memberId
+        ),
       };
     });
   };
 
   render() {
     return (
-        <TeamManager
-            allMembers={this.props.allMembers}
-            selectedMembers={this.state.selectedMembers}
-            onAddMember={this.handleAddMember}
-            onRemoveMember={this.handleRemoveMember}
-        />
+      <TeamManager
+        allMembers={this.props.allMembers}
+        selectedMembers={this.state.selectedMembers}
+        onAddMember={this.handleAddMember}
+        onRemoveMember={this.handleRemoveMember}
+      />
     );
   }
 }

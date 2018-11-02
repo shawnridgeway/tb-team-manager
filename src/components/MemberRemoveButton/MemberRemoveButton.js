@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import './MemberRemoveButton.css';
 import { MemberShape } from '../../shapes';
 
-
 class MemberRemoveButton extends React.Component {
   removeMember = () => {
     this.props.onRemoveMember(this.props.member.id);
@@ -14,10 +13,12 @@ class MemberRemoveButton extends React.Component {
 
   render() {
     return (
-        <div className="memberRemoveButton text-warning"
-             onClick={this.removeMember}>
-          X
-        </div>
+      <div
+        className="memberRemoveButton text-warning"
+        onClick={this.removeMember}
+      >
+        X
+      </div>
     );
   }
 }

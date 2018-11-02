@@ -7,16 +7,9 @@ import './MemberSelectorOption.css';
 import { MemberShape } from '../../shapes';
 import Member from '../Member/Member';
 
-
-const MemberSelectorOption = (props) => {
+const MemberSelectorOption = props => {
   const { member } = props;
-  return (
-      <Member
-          member={member}
-          tightView={true}
-          onClick={props.onAdd}
-      />
-  )
+  return <Member member={member} tightView={true} onClick={props.onAdd} />;
 };
 
 MemberSelectorOption.propTypes = {

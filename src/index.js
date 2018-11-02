@@ -6,10 +6,10 @@ import ReactDOM from 'react-dom';
 import './reset.css';
 import './index.css';
 import App from './views/App/App';
-import memberData from './data.json'
+import memberData from './data.json';
 
 const store = {
-  allMembers: memberData
+  allMembers: memberData,
 };
 
 ReactDOM.render(<App {...store} />, document.getElementById('root'));

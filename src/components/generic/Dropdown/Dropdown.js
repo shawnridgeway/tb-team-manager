@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 // project
 import './Dropdown.css';
 
-
 class Dropdown extends React.Component {
   componentDidMount() {
     document.addEventListener('click', this.handleGlobalClick, false);
@@ -15,7 +14,7 @@ class Dropdown extends React.Component {
     document.removeEventListener('click', this.handleGlobalClick, false);
   }
 
-  handleGlobalClick = (event) => {
+  handleGlobalClick = event => {
     if (this.node.contains(event.target)) {
       return;
     }
@@ -24,11 +23,9 @@ class Dropdown extends React.Component {
 
   render() {
     return (
-        <div
-            className="dropdown"
-            ref={el => this.node = el}>
-          {this.props.children}
-        </div>
+      <div className="dropdown" ref={el => (this.node = el)}>
+        {this.props.children}
+      </div>
     );
   }
 }
