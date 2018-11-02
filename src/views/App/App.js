@@ -31,7 +31,6 @@ class App extends React.Component {
   };
 
   handleRemoveMember = (memberId) => {
-    console.log(memberId);
     this.setState(prevState => {
       return {
         selectedMembers: prevState.selectedMembers
@@ -43,7 +42,7 @@ class App extends React.Component {
   render() {
     return (
         <TeamManager
-            allMembers={this.props.store.allMembers}
+            allMembers={this.props.allMembers}
             selectedMembers={this.state.selectedMembers}
             onAddMember={this.handleAddMember}
             onRemoveMember={this.handleRemoveMember}

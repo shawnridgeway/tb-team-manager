@@ -12,4 +12,4 @@ const store = {
   allMembers: memberData
 };
 
-ReactDOM.render(<App store={store} />, document.getElementById('root'));
+ReactDOM.render(<App {...store} />, document.getElementById('root'));

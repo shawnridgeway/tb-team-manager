@@ -49,17 +49,18 @@ class TeamManager extends React.Component {
           if (!member) {
             return null;
           }
+          const button = (
+            <MemberRemoveButton
+                member={member}
+                onRemoveMember={this.props.onRemoveMember}
+            />
+          );
           return (
-              <Member
-                  key={memberId}
-                  member={member}
-                  hoverImage={(
-                      <MemberRemoveButton
-                          member={member}
-                          onRemoveMember={this.props.onRemoveMember}
-                      />
-                  )}
-              />
+            <Member
+                key={memberId}
+                member={member}
+                hoverImage={button}
+            />
           );
         });
   };
