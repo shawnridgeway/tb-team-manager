@@ -9,7 +9,7 @@ it('should call onClose when clicked occurs outside', () => {
   const event = new Event('click');
   document.dispatchEvent(event);
 
-  return expect(onClose).toBeCalled()
+  return expect(onClose).toBeCalled();
 });
 
 it('should not call onClose when clicked occurs inside', () => {
